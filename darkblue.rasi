@@ -1,0 +1,165 @@
+/* Rofi Theme - Deep Abyss (Darker Blue) */
+
+* {
+    font: "Fira Code Medium 12";
+
+    /* --- CORES ESCURECIDAS --- */
+    
+    /* Fundo: Quase preto absoluto, com um leve toque azul noturno */
+    background:                 #000208; 
+    background-color:           #000208;
+    
+    /* Texto: Cinza azulado (menos agressivo que o branco puro) */
+    foreground:                 #aebbc7; 
+    
+    /* Item Ativo (mas não selecionado): Sutilmente mais claro que o fundo */
+    active-background:          #050a14; 
+    
+    /* Item Urgente: Vermelho vinho escuro (não rosa choque) */
+    urgent-background:          #660022; 
+    urgent-foreground:          #e0eaf2; 
+    
+    /* Seleção: Azul Marinho MUITO escuro (nada de azul elétrico vibrante) */
+    selected-background:        #081226; 
+    selected-urgent-background: @urgent-background;
+    selected-active-background: @active-background;
+    
+    /* Separadores e Bordas: Azul meia-noite discreto */
+    separatorcolor:             #0a152b; 
+    bordercolor:                #0a152b;  
+    
+    /* Destaque (Prompt): Azul cobalto escuro */
+    highlight-color:            #003366; 
+}
+
+#window {
+    background-color: @background;
+    border:           1px;           /* Borda fina */
+    border-color:     @bordercolor;  /* Borda escura */
+    padding:          5px;
+}
+
+#mainbox {
+    border:  0;
+    padding: 0;
+}
+
+#message {
+    border:       1px dash 0px 0px;
+    border-color: @separatorcolor;
+    padding:      1px;
+}
+
+#textbox {
+    text-color: @foreground;
+}
+
+#listview {
+    fixed-height: 0;
+    border:       2px dash 0px 0px;
+    border-color: @bordercolor;
+    spacing:      2px;
+    scrollbar:    false;
+    padding:      2px 0px 0px;
+}
+
+#element {
+    border:  0;
+    padding: 1px;
+}
+
+#element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+#element.normal.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+
+#element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+
+#element.normal.active {
+    background-color: @active-background;
+    text-color:       @foreground;
+}
+
+#element.selected.normal {
+    background-color: @selected-background;
+    text-color:       @foreground; /* Mantive claro para leitura */
+}
+
+#element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @foreground;
+}
+
+#element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @foreground;
+}
+
+#element.alternate.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+
+#element.alternate.urgent {
+    background-color: @urgent-background;
+    text-color:       @foreground;
+}
+
+#element.alternate.active {
+    background-color: @active-background;
+    text-color:       @foreground;
+}
+
+#scrollbar {
+    width:        2px;
+    border:       0;
+    handle-width: 8px;
+    padding:      0;
+}
+
+#sidebar {
+    border:       2px dash 0px 0px;
+    border-color: @separatorcolor;
+}
+
+#button.selected {
+    background-color: @selected-background;
+    text-color:       @foreground;
+}
+
+#inputbar {
+    spacing:    0;
+    text-color: @foreground;
+    padding:    1px;
+    children:   [prompt,textbox-prompt-colon,entry,case-indicator];
+}
+
+#case-indicator {
+    spacing:    0;
+    text-color: @foreground;
+}
+
+#entry {
+    spacing:    0;
+    text-color: @foreground;
+}
+
+#prompt {
+    spacing:    0;
+    text-color: @highlight-color; /* Prompt escuro */
+}
+
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em;
+    text-color: @highlight-color;
+}
