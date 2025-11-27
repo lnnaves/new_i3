@@ -1,0 +1,157 @@
+# Rosé Pine theme for Alacritty
+# https://rosepinetheme.com/
+
+[window]
+opacity = 0.85  # Opacidade da janela
+
+[font]
+size = 11.0
+
+[colors.primary]
+foreground = "#e0eaf2" # texto claro (brilho da chuva)
+background = "#000b15" # base (MANTIDA INALTERADA)
+dim_foreground = "#8a9cb3" # texto sutil (cinza azulado)
+bright_foreground = "#ffffff"
+
+[colors.cursor]
+text = "#000b15"
+cursor = "#e0eaf2"
+
+[colors.vi_mode_cursor]
+text = "#000b15"
+cursor = "#ff33cc"
+
+[colors.search.matches]
+foreground = "#e0eaf2"
+background = "#263354" # Azul escuro (overlay)
+
+[colors.search.focused_match]
+foreground = "#000b15" # base
+background = "#00c4ff" # Ciano Neon (destaque máximo)
+
+[colors.hints.start]
+foreground = "#ff33cc" # Rosa Neon
+background = "#151a2e" # surface
+
+[colors.hints.end]
+foreground = "#8a9cb3" # muted
+background = "#151a2e"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.footer_bar]
+foreground = "#e0eaf2"
+background = "#151a2e" # surface
+
+[colors.selection]
+text = "#e0eaf2"
+background = "#0055ff" # Azul Elétrico (seleção)
+
+[colors.normal]
+black   = "#151a2e" # surface/sombra
+red     = "#ff4444" # vermelho alerta
+green   = "#26d9a3" # verde azulado
+yellow  = "#f0e15d" # amarelo urbano
+blue    = "#0055ff" # azul profundo
+magenta = "#b800e6" # roxo reflexo
+cyan    = "#009eb0" # ciano escuro
+white   = "#e0eaf2" # texto
+
+[colors.bright]
+black   = "#404f66" # cinza azulado
+red     = "#ff2a6d" # vermelho rosado
+green   = "#5bf0d3" # verde neon
+yellow  = "#fff952" # amarelo neon
+blue    = "#3385ff" # azul céu
+magenta = "#ff33cc" # Rosa Pink Panther
+cyan    = "#00c4ff" # Ciano Chuva Digital
+white   = "#ffffff" # branco puro
+
+[colors.dim]
+black   = "#404f66"
+red     = "#ff4444"
+green   = "#26d9a3"
+yellow  = "#f0e15d"
+blue    = "#0055ff"
+magenta = "#b800e6"
+cyan    = "#009eb0"
+white   = "#e0eaf2"
+
+[cursor.style]
+shape = "Underline"
+blinking = "On" # Opcional: faz o cursor piscar
+
+#[colors.primary]
+#foreground = "#e0eaf2" # text
+#background = "#000b15" # base
+#dim_foreground = "#908caa" # subtle
+#bright_foreground = "#e0def4"
+#
+#[colors.cursor]
+#text = "#e0def4"
+#cursor = "#ebbcba" # highlightHigh (rose)
+#
+#[colors.vi_mode_cursor]
+#text = "#e0def4"
+#cursor = "#ebbcba"
+#
+#[colors.search.matches]
+#foreground = "#908caa" # subtle
+#background = "#26233a" # overlay
+#
+#[colors.search.focused_match]
+#foreground = "#191724" # base
+#background = "#ebbcba" # rose
+#
+#[colors.hints.start]
+#foreground = "#908caa" # subtle
+#background = "#1f1d2e" # surface
+#
+#[colors.hints.end]
+#foreground = "#6e6a86" # muted
+#background = "#1f1d2e"
+#
+#[colors.line_indicator]
+#foreground = "None"
+#background = "None"
+#
+#[colors.footer_bar]
+#foreground = "#e0def4" # text
+#background = "#1f1d2e" # surface
+#
+#[colors.selection]
+#text = "#e0def4"
+#background = "#31748f" # highlightMed (foam-ish)
+#
+#[colors.normal]
+#black   = "#26233a" # overlay
+#red     = "#eb6f92" # love
+#green   = "#31748f" # pine
+#yellow  = "#f6c177" # gold
+#blue    = "#9ccfd8" # foam
+#magenta = "#c4a7e7" # iris
+#cyan    = "#ea9a97"
+#white   = "#e0def4" # text
+#
+#[colors.bright]
+#black   = "#6e6a86" # muted
+#red     = "#eb6f92"
+#green   = "#31748f"
+#yellow  = "#f6c177"
+#blue    = "#9ccfd8"
+#magenta = "#c4a7e7"
+#cyan    = "#ea9a97"
+#white   = "#e0def4"
+#
+#[colors.dim]
+#black   = "#6e6a86"
+#red     = "#eb6f92"
+#green   = "#31748f"
+#yellow  = "#f6c177"
+#blue    = "#9ccfd8"
+#magenta = "#c4a7e7"
+#cyan    = "#ea9a97"
+#white   = "#e0def4"
+
